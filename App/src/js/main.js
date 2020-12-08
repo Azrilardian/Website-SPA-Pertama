@@ -13,9 +13,7 @@ const main = () => {
 		return fetch(page).then((response) => {
 			if (response.status == 200) return response.text();
 			else if (response.status == 404) return `<p>Halaman tidak ditemukan.</p>`;
-			else {
-				return `<p>Ups... Halaman tidak dapat diakses.</p>`;
-			}
+			return `<p>Ups... Halaman tidak dapat diakses.</p>`;
 		});
 	};
 
