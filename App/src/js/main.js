@@ -21,6 +21,7 @@ const main = () => {
 		try {
 			const section = document.querySelector("#section");
 			const pages = await loadPage(`../App/pages/${page}.html`);
+			window.scrollTo(0, 0);
 			section.innerHTML = pages;
 		} catch (err) {
 			alert(err);
